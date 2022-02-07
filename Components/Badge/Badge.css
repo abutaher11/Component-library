@@ -1,0 +1,43 @@
+/* @import url(../reset.css); */
+@import url(../Avatar/Avatar.css);
+@import url(../style.css);
+
+.badge-container {
+  position: relative;
+  width: max-content;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -4px;
+  right: -9px;
+  position: absolute;
+  font-size: 0.5rem;
+  color: white;
+  font-weight: 900;
+  height: 18px;
+  width: 18px;
+  border: none;
+  background-color: var(--danger-color);
+  border-radius: 50%;
+}
+
+.badge.online {
+  background-color: var(--success-color);
+  top: 52px;
+  right: 3px;
+}
+
+.badge.offline {
+  background-color: var(--dark-grey);
+  top: 52px;
+  right: 3px;
+}
+
+.badge.dnd {
+  background-color: var(--danger-color);
+  top: 52px;
+  right: 3px;
+}

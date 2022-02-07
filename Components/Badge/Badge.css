@@ -1,6 +1,6 @@
-/* @import url(../reset.css); */
+
 @import url(../Avatar/Avatar.css);
-@import url(../style.css);
+@import url(/style.css);
 
 .badge-container {
   position: relative;

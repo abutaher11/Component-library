@@ -1,0 +1,46 @@
+
+@import url(/style.css);
+
+.alert{
+    width: 60%;
+    color:white;
+    border-radius: 4px;
+    background-color: var(--primary-color) ;
+    padding: 1rem 1.5rem;
+    opacity: .9;
+    margin: .5rem 0;
+    font-size: .8rem;
+}
+
+.primary{
+    background-color: var(--primary-color) ;
+}
+
+.error{
+    background-color: var(--danger-color);
+}
+
+.success{
+    background-color: var(--success-color);
+}
+
+.warning{
+    background-color: var(--warning-color);
+}
+
+.example-div{
+    border-radius: 4px;
+    /* background-color: #F5F7F9; */
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    /* flex-wrap: wrap; */
+}
+
+.alert-box{
+    flex-direction: column;
+}

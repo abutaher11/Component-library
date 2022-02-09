@@ -1,6 +1,20 @@
 
 :root{
-    --success-color: #0dda51;
+    
     --dark-grey: #757981e8;
-    --danger-color: rgb(235, 53, 7);
+    --primary-color : #6366F1;
+    --default-color : #172B4D;
+    --secondary-color : #F3F4F6;
+    --danger-color : #F44336;
+    --success-color :#4CAF50;
+    --warning-color : #FF9800;
+
+    --primary-hover : #4F46E5;
+    --secondary-hover: #E5E7EB;
+    --danger-hover : #d31609 ;
+    --success-hover: #0d8611;
+    --active-hover : #058ce0;
+
+    --off-white : #F6F9FC;
+    --active-color : #1EA7FD;
 }

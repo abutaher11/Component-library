@@ -28,9 +28,9 @@
     background-color: var(--warning-color);
 }
 
-.example-div{
+/* .example-div{
     border-radius: 4px;
-    /* background-color: #F5F7F9; */
+    
     min-height: 100px;
     width: 100%;
     display: flex;
@@ -39,7 +39,10 @@
     padding: 1rem;
     margin-bottom: 1.5rem;
     /* flex-wrap: wrap; */
-}
+    /* background-color: #F5F7F9;
+} 
+*/
+
 
 .alert-box{
     flex-direction: column;

@@ -1,0 +1,26 @@
+
+@import url(/style.css);
+
+/* CARD COMPONENT */
+
+.card{
+    height: max-content;
+    width: 19rem;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 1rem 0;
+}
+
+.card-text{
+    font-size: 1rem;
+    color: var(--dark-grey);
+    padding: 1rem;
+}
+

@@ -1,7 +1,7 @@
 
 @import url(/style.css);
 
-/* CARD COMPONENT */
+/* CARD COMPONENTS */
 
 .card{
     height: max-content;
@@ -9,8 +9,9 @@
     background-color: white;
     border-radius: 2px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
 
 .card-title{
     font-size: 1.5rem;
@@ -23,4 +24,113 @@
     color: var(--dark-grey);
     padding: 1rem;
 }
+
+/* lower */
+
+.lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    background-color: gold;/* remove later */
+}
+  
+.lower img {
+    width: 20px;
+    height: 1.25rem;
+    margin-right: 1rem;
+}
+  
+.lower div {
+    margin-left: 0.5rem;
+}
+  
+.lower small {
+    font-size: 14px;
+    color: green;
+    letter-spacing: 1.25px;
+    font-family: "roboto";
+    font-weight: bold;
+}
+  
+.lower button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem 0.6rem;
+}
+  
+.lower button:hover {
+    cursor: pointer;
+    background-color: rgba(98, 0, 238, 0.03);
+    border-radius: 5px;
+}
+  
+.lower img:hover {
+    cursor: pointer;
+}
+
+
+
+/* basic-card */
+
+.basic-card-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background-color: greenyellow;remove later */
+}
+  
+.basic-card .upperSection:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+  
+.basic-card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25rem;
+    /* box-shadow: 3px 3px 80px 1px rgba(207, 207, 207, 0.5);   */
+    border-radius: 0.4rem;
+}
+  
+.basic-card .upperSection img {
+    width: 25rem;
+    height: 196.88px;
+}
+  
+.basic-card .upperContent {
+    padding: 1rem;
+}
+  
+
+  
+.details {
+    margin-top: 0.2rem;
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+} 
+
+
+/* text-overlay */
+
+.text-overlay .upperSection {
+    position: relative;
+    /* border: red solid; */
+}
+  
+.text-overlay .upperContent {
+    position: absolute;
+    left: 0;
+    color: white;
+    bottom: 3rem;
+}
+
+.text-overlay .upperContent h3 {
+    color: white;
+}
+
+  
 

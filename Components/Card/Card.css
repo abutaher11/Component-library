@@ -1,29 +1,16 @@
 
 @import url(/style.css);
+@import url(/Components/Badge/Badge.css);
 
-/* CARD COMPONENTS */
-
-.card{
-    height: max-content;
-    width: 19rem;
-    background-color: white;
-    border-radius: 2px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    display: flex;
-    flex-wrap: wrap;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.card-title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: .5rem 1rem 0;
+.outer-div{
+    margin: 1rem;
 }
 
-.card-text{
-    font-size: 1rem;
-    color: var(--dark-grey);
-    padding: 1rem;
-}
 
 /* lower */
 
@@ -78,11 +65,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: fit-content;
+    margin: 1rem;
+    border: solid 1px;
+    max-width: 23rem;
+    position: relative;
+    /* padding: 0.5rem; */
     /* background-color: greenyellow;remove later */
 }
   
-.basic-card .upperSection:hover {
+.upperSection:hover {
     background-color: #f5f5f5;
     cursor: pointer;
 }
@@ -90,14 +82,15 @@
 .basic-card {
     display: flex;
     flex-flow: column nowrap;
-    width: 25rem;
+    width: 22rem;
     /* box-shadow: 3px 3px 80px 1px rgba(207, 207, 207, 0.5);   */
     border-radius: 0.4rem;
 }
   
 .basic-card .upperSection img {
-    width: 25rem;
-    height: 196.88px;
+    width: 22rem;
+    height: 12rem;
+    /*  border: red solid; remove later */
 }
   
 .basic-card .upperContent {
@@ -124,13 +117,87 @@
 .text-overlay .upperContent {
     position: absolute;
     left: 0;
-    color: white;
+    color: whitesmoke;
     bottom: 3rem;
 }
 
 .text-overlay .upperContent h3 {
     color: white;
 }
+
+/* card with badge */
+
+.badge-card {
+    position: relative;
+}
+
+.basic-card.badge-card .badge {
+    height: 25px;
+    width: 25px;
+    font-size: 0.9rem;
+}
+
+/* Dismissable card */
+
+.dismiss-card {
+    position: relative;
+}
+
+.crx img{
+    display: flex;
+    top: -14px;
+    right: -12px;
+    color: red;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+
+
+/* Horizontal Card */
+
+  
+.horizontal-card {
+    background-color: #ffffff;
+    width: 25rem;
+    height: fit-content;
+    box-shadow: 3px 4px 6px rgba(207, 207, 207, 0.5);
+    border-radius: 0.4rem;
+}
+
+.horizontal-card .upperSection {
+    display: flex;
+}
+  
+.horizontal-card .upperContent {
+    margin-left: 0.9rem;
+    padding-top: 1rem;
+}
+
+.horizontal-card .upperSection img {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.basic-card.text-overlay .upperContent{   
+    top: 125px;
+    position: absolute;
+}
+
+
+
+
+
+
+    
+
+
+  
+
 
   
 

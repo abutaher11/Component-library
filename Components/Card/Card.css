@@ -1,14 +1,24 @@
 
 @import url(/style.css);
 @import url(/Components/Badge/Badge.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: "roboto", "sans-serif";
+}
+
 .outer-div{
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
 }
 
 
@@ -20,11 +30,10 @@
     align-items: center;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
-    background-color: gold;/* remove later */
 }
   
 .lower img {
-    width: 20px;
+    width: 1.25rem;
     height: 1.25rem;
     margin-right: 1rem;
 }
@@ -34,7 +43,7 @@
 }
   
 .lower small {
-    font-size: 14px;
+    font-size: 0.9rem;
     color: green;
     letter-spacing: 1.25px;
     font-family: "roboto";
@@ -50,7 +59,7 @@
 .lower button:hover {
     cursor: pointer;
     background-color: rgba(98, 0, 238, 0.03);
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
   
 .lower img:hover {
@@ -66,12 +75,10 @@
     justify-content: center;
     align-items: center;
     height: fit-content;
-    margin: 1rem;
     border: solid 1px;
     max-width: 23rem;
     position: relative;
-    /* padding: 0.5rem; */
-    /* background-color: greenyellow;remove later */
+    padding: 0.3rem;
 }
   
 .upperSection:hover {
@@ -90,7 +97,6 @@
 .basic-card .upperSection img {
     width: 22rem;
     height: 12rem;
-    /*  border: red solid; remove later */
 }
   
 .basic-card .upperContent {
@@ -111,7 +117,6 @@
 
 .text-overlay .upperSection {
     position: relative;
-    /* border: red solid; */
 }
   
 .text-overlay .upperContent {
@@ -132,8 +137,8 @@
 }
 
 .basic-card.badge-card .badge {
-    height: 25px;
-    width: 25px;
+    height: 1.56rem;
+    width: 1.56rem;
     font-size: 0.9rem;
 }
 
@@ -145,12 +150,12 @@
 
 .crx img{
     display: flex;
-    top: -14px;
-    right: -12px;
-    color: red;
+    top: -0.25rem;
+    right: -0.56rem;
+    background-color: grey;
     position: absolute;
-    height: 24px;
-    width: 24px;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
 }
 
@@ -184,7 +189,7 @@
 }
 
 .basic-card.text-overlay .upperContent{   
-    top: 125px;
+    top: 7.8rem;
     position: absolute;
 }
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="snackbar.css">
+    <script src="https://kit.fontawesome.com/1557e32289.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-content">
+    <div class="outer-div">
+        <!-- Baseline Snackbar -->
+        <div class="content-head">
+            <h2>Baseline</h2>
+        </div>
+        <div class="content">
+            
+            <div class="example">
+                <div class="toggles">
+                <button class="btn btn-primary" id="btn-baseline">Baseline</button>
+                </div>
+            </div>
+        </div>    
+
+        <!-- Leading Snackbar -->
+        <div class="content-head">
+            <h2>Leading</h2>
+        </div>
+        <div class="content">
+            
+            <div class="example">
+                <div class="toggles">
+                <button class="btn btn-primary" id="btn-leading">Leading</button
+                >
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Stacked Snackbar -->
+        <div class="content-head">
+            <h2>Stacked</h2>
+        </div>
+        <div class="content">
+             
+            <div class="example">
+              <div class="toggles">
+                <button class="btn btn-primary" id="btn-stacked">Stacked</button>
+              </div>
+            </div>
+        </div> 
+
+        <div class="snackbar baseline">
+            <span>Can't share post. Retry in 10 seconds </span>
+            <span>RETRY</span>
+            <i class="fas fa-times baseline-close-btn"></i>
+        </div>
+        
+        <div class="snackbar leading">
+            <span>Your post has been archived</span>
+            <span>UNDO</span>
+            <i class="fas fa-times leading-close-btn"></i>
+        </div>
+        
+        <div class="snackbar stacked">
+            <span
+              >This item has already archived. You can add a new post</span
+            >
+            <div>
+              <span>ADD A NEW POST</span>
+              <i class="fas fa-times stacked-close-btn"></i>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    <script src="snackbar.js"></script>
+    </main>
+</body>
+</html>

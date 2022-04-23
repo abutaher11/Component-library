@@ -1,0 +1,102 @@
+@import url(/style.css);
+@import url(/Components/Button/button.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+}
+
+.outer-div{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.main-content {
+  padding: 1rem;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  width: 80%;
+}
+
+.example {
+  margin: 1.5rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 1px 3px 3px 15px rgb(219 219 219 / 6%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.snackbar {
+    padding: 0.5rem;
+    background: #333333;
+    color: white;
+    border-radius: 3px;
+    width: 24.18rem;
+    height: 2.81rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    box-shadow: 2px 2px 8px 5px rgba(161, 161, 161, 0.09);
+  }
+  
+  .snackbar.baseline :nth-child(2),
+  .snackbar.leading :nth-child(2),
+  .snackbar.stacked div :nth-child(1) {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .baseline {
+    position: fixed;
+    bottom: 1.18rem;
+    left: 40%;
+  }
+  
+  .leading {
+    width: 21.25rem;
+    padding: 0 0.8rem;
+    position: fixed;
+    bottom: 19px;
+    left: 3%;
+  }
+  
+  .stacked {
+    flex-flow: column;
+    width: 30.6rem;
+    min-width: min-content;
+    height: 5.93rem;
+    padding: 0 0.5rem;
+    position: fixed;
+    bottom: 1.18rem;
+    left: 33%;
+  }
+  
+  .stacked > div {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-right: 1.5rem;
+  }
+  
+  .stacked > div span {
+    margin-right: 1.5rem;
+  }
+  
+  .stacked-close-btn,.baseline-close-btn,.leading-close-btn{
+    cursor: pointer;
+  }
+  

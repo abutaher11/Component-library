@@ -11,3 +11,66 @@
 @import url(./Snackbar/snackbar.css);
 @import url(./Rating/rating.css);
 
+
+
+body {
+    font-family: "roboto";
+    background: var(--off-white);
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* navigation bar */
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 2px 1px rgb(211, 211, 211);
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+  }
+
+.navbar li {
+    list-style: none;
+}
+
+.logo {
+    margin-left: 2.5rem;
+}
+
+.navbar > ul {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2.5rem;
+}
+
+/* Landing Page */
+
+.hero-wrapper {
+    display: flex;
+    height: 80vh;
+}
+
+.hero {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+.hero p {
+    line-height: 1.5rem;
+    text-align: center;
+}
+  
+.hero h1 {
+    font-size: 2.8rem;
+}

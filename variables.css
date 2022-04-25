@@ -1,6 +1,4 @@
-@import url(./variables.css);
-
-/* :root{
+:root{
     
     --dark-grey: #757981e8;
     --primary-color : #6366F1;
@@ -18,17 +16,4 @@
 
     --off-white : #F6F9FC;
     --active-color : #1EA7FD;
-} */
-
-.example-div{
-    border-radius: 4px;
-    /* background-color: #F5F7F9; */
-    min-height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    /* flex-wrap: wrap; */
 }
